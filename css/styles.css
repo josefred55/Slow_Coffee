@@ -8,14 +8,10 @@ PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
   --coffee-900: #2B1E16;
   --coffee-600: #6B4A3A;
   --cream: #e3dacd;
-  --white: #ffffff;
-  --olive: #6F7D63;
   --terracotta: #B36A4A;
-  --gold: #D4A574;
   --font-serif: 'Libre Baskerville', serif;
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  --shadow: 0 8px 30px rgba(43, 30, 22, 0.12);
 }
 
 /* 1. RESET & BASE */
@@ -190,117 +186,16 @@ a {
   color: white;
 }
 
-/* 5. SECCIÓN HISTORIA (Imagen a la derecha) */
-.story-media img {
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  width: 100%;
-  object-fit: cover;
-}
-
-.story-media {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* 7. PRODUCTOS (Cards de Inicio) */
-.product-card {
-  background: white;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+/* Cards de Inicio */
+.product-card, .icon-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
 }
-
-.product-card .card-body {
-  padding: 1.25rem;
-}
-
-.product-photo {
-  height: 230px;
-  background: #eee;
-  margin-bottom: .5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.product-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.product-card:hover {
+.product-card:hover, .icon-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  font-size: 1.05rem;
 }
 
-.product-card .card-title {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.product-card .price {
-  color: var(--terracotta);
-  font-weight: 700;
-  font-size: 1.2rem;
-  font-family: var(--font-serif);
-}
-
-/* 6. ICONOS (Origen & Proceso) - Corregido tamaño */
-.icon-card {
-  text-align: center;
-  padding: 2.5rem 2rem;
-  background: white;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-}
-
-.icon-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-}
-
-.icon-card svg {
-  width: 40px;
-  height: 80px;
-  color: var(--terracotta);
-  stroke-width: 1px;
-  stroke-width: 1.5px;
-}
-
-.icon-card h4,
-.product-card h5 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600
-}
-
-.icon-card p,
-.product-card p {
-  color: var(--coffee-600);
-  font-size: 1.03rem;
-  line-height: 1.7;
-}
-
-.icon-card .icon-bg {
-  width: 80px;
-  height: 80px;
-  background: var(--cream);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-/* 8. FOOTER */
+/* FOOTER */
 .site-footer {
   background: var(--coffee-900);
   color: var(--cream);
@@ -334,6 +229,7 @@ a {
   color: white;
 }
 
+/* botones */
 .btn-outline-secondary {
   border: 2px solid var(--coffee-900);
   padding: 1.2rem 2rem;
@@ -344,7 +240,6 @@ a {
   box-shadow: 0 4px 24px rgba(179, 106, 74, 0.4);
   transition: all 0.3s ease;
 }
-
 .btn-outline-secondary:hover {
   background: var(--cream);
   color: var(--coffee-900);
@@ -354,7 +249,6 @@ a {
 }
 
 /* PAGINA HISTORIA (headline tambien es usado en las cards del index)*/
-
 .headline {
   color: var(--terracotta);
   font-size: 1rem;
