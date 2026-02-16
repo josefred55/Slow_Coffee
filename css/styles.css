@@ -5,8 +5,8 @@ PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
    ══════════════════════════════════════════════════════════ */
 
 :root {
-  --coffee-900: #2B1E16;
-  --coffee-600: #6B4A3A;
+  --coffee-900: #2b1e16;
+  --coffee-600: #6b4a3a;
   --cream: #e3dacd;
   --terracotta: #B36A4A;
   --font-serif: 'Libre Baskerville', serif;
@@ -18,7 +18,6 @@ PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -27,7 +26,6 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-
 h1,
 h2,
 h3,
@@ -37,12 +35,10 @@ h5 {
   font-weight: 700;
   color: var(--coffee-900);
 }
-
 p,
 .comunidad {
-  color: var(--coffee-600)
+  color: var(--coffee-600);
 }
-
 a {
   text-decoration: none;
   transition: 0.3s;
@@ -54,8 +50,12 @@ a {
   max-width: 1300px !important;
   margin: 0 auto;
   padding: 0 2rem;
+.container {
+  width: 100%;
+  max-width: 1300px !important;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
-
 .py-section {
   padding: 4rem 0;
 }
@@ -66,13 +66,11 @@ a {
   padding: 1rem 0;
   z-index: 1050;
 }
-
 .navbar-brand img {
   height: 60px;
   width: auto;
   object-fit: contain;
 }
-
 .nav-link {
   color: var(--coffee-900) !important;
   font-weight: 400;
@@ -80,7 +78,6 @@ a {
   padding: 0.5rem 1rem !important;
   transition: color 0.3s ease;
 }
-
 .nav-link:hover {
   color: var(--terracotta) !important;
 }
@@ -98,7 +95,6 @@ a {
     padding: 2rem;
     overflow-y: auto;
   }
-
   .navbar-collapse.show,
   .navbar-collapse.collapsing {
     display: flex !important;
@@ -107,43 +103,35 @@ a {
     height: 100vh !important;
     transform: translateX(0);
   }
-
   .navbar-nav {
     width: 100%;
     text-align: center;
     gap: 1rem !important;
   }
-
   .nav-item {
     width: 100%;
   }
-
   .nav-link {
     font-size: 1.5rem !important;
     padding: 1rem !important;
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
-
   .nav-link:last-child {
     border-bottom: none;
   }
-
   .navbar-toggler {
     position: relative;
     z-index: 1050;
   }
-
   .navbar-brand {
     position: relative;
-    z-index: 1050
+    z-index: 1050;
   }
 }
-
 .navbar-collapse.collapsing {
   transition: none;
 }
-
 .navbar-toggler:focus {
   box-shadow: none;
 }
@@ -157,7 +145,6 @@ a {
   overflow: hidden;
   background: var(--coffee-900);
 }
-
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -166,20 +153,21 @@ a {
   object-fit: cover;
   z-index: 0;
 }
-
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75));
+  background: linear-gradient(
+    135deg,
+    rgba(43, 30, 22, 0.85),
+    rgba(107, 74, 58, 0.75)
+  );
   z-index: 1;
 }
-
 .hero-inner {
   position: relative;
   z-index: 2;
   width: 100%;
 }
-
 .hero-copy,
 .hero-copy h1,
 .hero-copy p {
@@ -256,20 +244,17 @@ a {
   letter-spacing: 1.1px;
   font-weight: 700;
 }
-
 .badge {
   font-size: 2rem;
   padding: 0.75rem 1.5rem;
   color: var(--terracotta);
   box-shadow: 0 4px 24px var(--cream);
 }
-
 .timeline-historia-new {
   position: relative;
 }
-
 .timeline-historia-new::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 0;
@@ -292,7 +277,25 @@ a {
   z-index: 10;
   box-shadow: 0 0 0 4px white;
 }
+.timeline-checkpoint {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 4px solid var(--terracotta, #c1666b);
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 0 4px white;
+}
 
+.timeline-checkpoint-current {
+  background: var(--terracotta, #c1666b);
+  width: 24px;
+  height: 24px;
+}
 .timeline-checkpoint-current {
   background: var(--terracotta, #c1666b);
   width: 24px;
@@ -303,7 +306,6 @@ a {
   .timeline-historia-new::before {
     left: 20px;
   }
-
   .timeline-checkpoint {
     left: 20px;
   }
@@ -320,7 +322,6 @@ a {
   border-radius: 40px;
   font-weight: 600;
 }
-
 .hero-badge:hover,
 .btn-hero:hover {
   background-color: var(--terracotta) !important;
@@ -328,7 +329,6 @@ a {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
 }
-
 .hero-badge:hover svg {
   stroke: white;
 }
@@ -337,4 +337,5 @@ a {
 .card:hover {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
   transform: translateY(-5px);
+}
 }
