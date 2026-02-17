@@ -17,7 +17,7 @@
 
 <body>
   <!-- //navegación -->
-  <header class="site-header">
+  <header class="site-header py-3">
     <nav class="navbar navbar-expand-md">
       <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="index.html">
@@ -43,15 +43,19 @@
 
   <!-- hero -->
   <main>
-    <section class="hero">
-      <img src="img/indexHero.png" alt="IndexHero" class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
+    <section
+      style="position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: var(--coffee-900);">
+      <img src="img/indexHero.png" alt="IndexHero"
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+      <div
+        style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)); z-index: 1;">
+      </div>
+      <div class="container" style="position: relative; z-index: 2; width: 100%;">
         <div class="row justify-content-center">
           <div class="col-lg-10 col-xl-8">
-            <div class="hero-copy text-center">
-              <h1 class="display-2 fw-bold mb-4">El café no es prisa</h1>
-              <p class="fs-4 mb-4">Es tiempo bien invertido.</p>
+            <div class="text-center">
+              <h1 class="display-2 fw-bold mb-4" style="color: white;">El café no es prisa</h1>
+              <p class="fs-4 mb-4" style="color: white;">Es tiempo bien invertido.</p>
               <a href="pag/catalogo.html" class="btn btn-hero fs-5">
                 Explorar Cafés
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -224,15 +228,19 @@
     </section>
 
     <!-- cta -->
-    <section class="hero">
-      <img src="img/ctaIndex.png" alt="IndexHero" class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
+    <section
+      style="position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: var(--coffee-900);">
+      <img src="img/homeCTA.png" alt="IndexHero"
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+      <div
+        style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)); z-index: 1;">
+      </div>
+      <div class="container" style="position: relative; z-index: 2; width: 100%;">
         <div class="row justify-content-center">
           <div class="col-lg-10 col-xl-8">
-            <div class="hero-copy text-center">
-              <h1 class="display-3 fw-bold mb-4">Ven a saborear el tiempo</h1>
-              <p class="fs-4 mb-5">Encuentra tu ritual en cada taza.</p>
+            <div class="text-center">
+              <h1 class="display-2 fw-bold mb-4" style="color: white;">Ven a saborear el tiempo</h1>
+              <p class="fs-4 mb-4" style="color: white;">Encuentra tu ritual en cada taza.</p>
               <a href="pag/catalogo.html" class="btn btn-hero fs-5">
                 Descubrir Más
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

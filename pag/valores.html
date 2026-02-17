@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="site-header py-3">
     <nav class="navbar navbar-expand-md">
       <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="index.html">
@@ -47,19 +47,23 @@
 
   <!-- hero -->
   <main>
-    <section class="hero">
-      <img src="../img/valoresFoto1.png" alt="IndexHero" class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
+    <section
+      style="position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: var(--coffee-900);">
+      <img src="../img/valoresFoto1.png" alt="IndexHero"
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+      <div
+        style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)); z-index: 1;">
+      </div>
+      <div class="container" style="position: relative; z-index: 2; width: 100%;">
         <div class="row justify-content-center">
           <div class="col-lg-10 col-xl-8">
-            <div class="hero-copy text-center">
-              <h1 class="display-2 fw-bold mb-4">La excelencia nace de nuestros valores</h1>
-              <p class="fs-4 mb-4">Transparencia radical, trazabilidad total y respeto absoluto por cada persona en
-                nuestra cadena de valor.
-              </p>
+            <div class="text-center">
+              <h1 class="display-2 fw-bold mb-4" style="color: white;">La excelencia nace de nuestros valores</h1>
+              <p class="fs-4 mb-4" style="color: white;">Transparencia radical, trazabilidad total y respeto absoluto
+                por cada persona en
+                nuestra cadena de valor.</p>
               <a href="#value" class="btn btn-hero fs-5">
-                Conocer más
+                Conocer Más
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                   style="margin-left: 0.5rem;">
                   <path d="M5 12h14M12 5l7 7-7 7" />
@@ -293,57 +297,61 @@
       </div>
     </section>
 
-    <!-- ========== CTA FINAL (Conversión Alta) ========== -->
-    <section class="hero">
-      <img src="../img/valoresFoto1.png" alt="IndexHero" class="hero-bg">
-      <img src="img/ctaIndex.png" alt="IndexHero" class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
+    <section
+      style="position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: var(--coffee-900);">
+      <img src="../img/origenHero.png" alt="IndexHero"
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+      <div
+        style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)); z-index: 1;">
+      </div>
+      <div class="container" style="position: relative; z-index: 2; width: 100%;">
         <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="display-4 fw-bold text-white mb-4">¿Listo para vivir la experiencia Slow Coffee?</h2>
-            <p class="fs-5 text-white mb-5 opacity-90">Descubre cafés artesanales que respetan a las personas y el
-              planeta.</p>
-
-            <a href="catalogo.html" class="btn btn-hero fs-5 mb-5" style="color: var(--terracotta)">
-              Ver nuestros cafés
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                class="ms-2" style="vertical-align: middle;">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-
-            <!-- Trust indicators -->
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 gap-md-5">
-              <div class="d-flex align-items-center gap-2 text-white">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0"
-                  style="color: #FFD700;">
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          <div class="col-lg-10 col-xl-8">
+            <div class="text-center">
+              <h1 class="display-2 fw-bold mb-4" style="color: white;">¿Listo para vivir la experiencia Slow Coffee?
+              </h1>
+              <p class="fs-4 mb-4" style="color: white;">Descubre cafés artesanales que respetan a las personas y el
+                planeta.</p>
+              <a href="catalogo.html" class="btn btn-hero fs-5 mb-5" style="color: var(--terracotta)">
+                Ver nuestros cafés
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="ms-2" style="vertical-align: middle;">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-                <span class="fw-medium">Envíos en 48h</span>
-              </div>
+              </a>
 
-              <div class="d-none d-md-block vr bg-white opacity-25" style="height: 30px;"></div>
+              <!-- Trust indicators -->
+              <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 gap-md-5">
+                <div class="d-flex align-items-center gap-2 text-white">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0"
+                    style="color: #FFD700;">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span class="fw-medium">Envíos en 48h</span>
+                </div>
 
-              <div class="d-flex align-items-center gap-2 text-white">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0"
-                  style="color: #FFD700;">
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-                <span class="fw-medium">Calidad garantizada</span>
-              </div>
+                <div class="d-none d-md-block vr bg-white opacity-25" style="height: 30px;"></div>
 
-              <div class="d-none d-md-block vr bg-white opacity-25" style="height: 30px;"></div>
+                <div class="d-flex align-items-center gap-2 text-white">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0"
+                    style="color: #FFD700;">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span class="fw-medium">Calidad garantizada</span>
+                </div>
 
-              <div class="d-flex align-items-center gap-2 text-white">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0"
-                  style="color: #FFD700;">
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-                <span class="fw-medium">+5000 clientes satisfechos</span>
+                <div class="d-none d-md-block vr bg-white opacity-25" style="height: 30px;"></div>
+
+                <div class="d-flex align-items-center gap-2 text-white">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="flex-shrink-0"
+                    style="color: #FFD700;">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span class="fw-medium">+5000 clientes satisfechos</span>
+                </div>
               </div>
             </div>
           </div>

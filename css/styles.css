@@ -61,11 +61,6 @@ a {
 }
 
 /* 3. HEADER & NAV */
-.site-header {
-  background: var(--cream);
-  padding: 1rem 0;
-  z-index: 1050;
-}
 .navbar-brand img {
   height: 60px;
   width: auto;
@@ -134,44 +129,6 @@ a {
 }
 .navbar-toggler:focus {
   box-shadow: none;
-}
-
-/* 4. HERO SYSTEM */
-.hero {
-  position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background: var(--coffee-900);
-}
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(43, 30, 22, 0.85),
-    rgba(107, 74, 58, 0.75)
-  );
-  z-index: 1;
-}
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-}
-.hero-copy,
-.hero-copy h1,
-.hero-copy p {
-  color: white;
 }
 
 /* Cards de Inicio */
