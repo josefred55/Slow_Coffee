@@ -8,16 +8,10 @@ PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
   --coffee-900: #2b1e16;
   --coffee-600: #6b4a3a;
   --cream: #e3dacd;
-  --white: #ffffff;
-  --olive: #6f7d63;
-  --terracotta: #b36a4a;
-  --gold: #d4a574;
-  --font-serif: "Libre Baskerville", serif;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-sans:
-    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial;
-  --shadow: 0 8px 30px rgba(43, 30, 22, 0.12);
+  --terracotta: #B36A4A;
+  --font-serif: 'Libre Baskerville', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
 /* 1. RESET & BASE */
@@ -67,11 +61,6 @@ a {
 }
 
 /* 3. HEADER & NAV */
-.site-header {
-  background: var(--cream);
-  padding: 1rem 0;
-  z-index: 1050;
-}
 .navbar-brand img {
   height: 60px;
   width: auto;
@@ -142,145 +131,50 @@ a {
   box-shadow: none;
 }
 
-/* 4. HERO SYSTEM */
-.hero {
-  position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background: var(--coffee-900);
+/* Cards de Inicio */
+.product-card, .icon-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(43, 30, 22, 0.85),
-    rgba(107, 74, 58, 0.75)
-  );
-  z-index: 1;
-}
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-}
-.hero-copy,
-.hero-copy h1,
-.hero-copy p {
-  color: white;
-}
-
-/* 5. SECCIÓN HISTORIA (Imagen a la derecha) */
-.story-media img {
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  width: 100%;
-  object-fit: cover;
-}
-.story-media {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* 7. PRODUCTOS (Cards de Inicio) */
-.product-card {
-  background: white;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  height: 100%;
-}
-.product-card .card-body {
-  padding: 1.25rem;
-}
-.product-photo {
-  height: 230px;
-  background: #eee;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.product-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.product-card:hover {
+.product-card:hover, .icon-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  font-size: 1.05rem;
-}
-.product-card .card-title {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-.product-card .price {
-  color: var(--terracotta);
-  font-weight: 700;
-  font-size: 1.2rem;
-  font-family: var(--font-serif);
 }
 
-/* 6. ICONOS (Origen & Proceso) - Corregido tamaño */
-.icon-card {
-  text-align: center;
-  padding: 2.5rem 2rem;
-  background: white;
-  border-radius: 12px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  height: 100%;
+/* FOOTER */
+.site-footer {
+  background: var(--coffee-900);
+  color: var(--cream);
+  padding: 4rem 0;
 }
-.icon-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+
+.footer-brand img {
+  filter: brightness(0) invert(1);
+  height: 60px;
 }
-.icon-card svg {
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.contact-list a {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
+.social-icon {
   width: 40px;
-  height: 80px;
-  color: var(--terracotta);
-  stroke-width: 1px;
-  stroke-width: 1.5px;
-}
-.icon-card h4,
-.product-card h5 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-.icon-card p,
-.product-card p {
-  color: var(--coffee-600);
-  font-size: 1.03rem;
-  line-height: 1.7;
-}
-.icon-card .icon-bg {
-  width: 80px;
-  height: 80px;
-  background: var(--cream);
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  color: white;
 }
+
+/* botones */
 .btn-outline-secondary {
   border: 2px solid var(--coffee-900);
   padding: 1.2rem 2rem;
@@ -300,7 +194,6 @@ a {
 }
 
 /* PAGINA HISTORIA (headline tambien es usado en las cards del index)*/
-
 .headline {
   color: var(--terracotta);
   font-size: 1rem;
