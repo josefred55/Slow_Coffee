@@ -135,40 +135,6 @@ a {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* FOOTER */
-.site-footer {
-  background: var(--coffee-900);
-  color: var(--cream);
-  padding: 4rem 0;
-}
-
-.footer-brand img {
-  filter: brightness(0) invert(1);
-  height: 60px;
-}
-
-.contact-list li {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  opacity: 0.8;
-}
-
-.contact-list a {
-  color: var(--cream);
-  text-decoration: underline;
-}
-
-.social-icon {
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
 /* botones */
 .btn-outline-secondary {
   border: 2px solid var(--coffee-900);
