@@ -1,7 +1,8 @@
 /* NOTAS DE BERTHA
 PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
+
 /* ══════════════════════════════════════════════════════════
-   SLOW COFFEE - ESTILOS UNIFICADOS (CORREGIDO)
+   SLOW COFFEE - ESTILOS UNIFICADOS
    ══════════════════════════════════════════════════════════ */
 
 :root {
@@ -10,14 +11,11 @@ PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
   --cream: #e3dacd;
   --terracotta: #B36A4A;
   --font-serif: 'Libre Baskerville', serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
 /* 1. RESET & BASE */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -26,41 +24,25 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   font-family: var(--font-serif);
   font-weight: 700;
   color: var(--coffee-900);
 }
-p,
-.comunidad {
-  color: var(--coffee-600);
-}
-a {
-  text-decoration: none;
-  transition: 0.3s;
-}
+p, .comunidad { color: var(--coffee-600); }
+a { text-decoration: none; transition: 0.3s; }
 
-/* 2. LAYOUT - Ajuste para que no se vea comprimido */
+/* 2. LAYOUT */
 .container {
   width: 100%;
   max-width: 1300px !important;
   margin: 0 auto;
   padding: 0 2rem;
 }
-.py-section {
-  padding: 4rem 0;
-}
+.py-section { padding: 4rem 0; }
 
 /* 3. HEADER & NAV */
-.navbar-brand img {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-}
+.navbar-brand img { height: 60px; width: auto; object-fit: contain; }
 .nav-link {
   color: var(--coffee-900) !important;
   font-weight: 400;
@@ -68,18 +50,12 @@ a {
   padding: 0.5rem 1rem !important;
   transition: color 0.3s ease;
 }
-.nav-link:hover {
-  color: var(--terracotta) !important;
-}
+.nav-link:hover { color: var(--terracotta) !important; }
 
-/* Menú móvil pantalla completa */
 @media (max-width: 767px) {
   .navbar-collapse {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     background: var(--cream);
     z-index: 1040;
     padding: 2rem;
@@ -93,49 +69,80 @@ a {
     height: 100vh !important;
     transform: translateX(0);
   }
-  .navbar-nav {
-    width: 100%;
-    text-align: center;
-    gap: 1rem !important;
-  }
-  .nav-item {
-    width: 100%;
-  }
+  .navbar-nav { width: 100%; text-align: center; gap: 1rem !important; }
+  .nav-item { width: 100%; }
   .nav-link {
     font-size: 1.5rem !important;
     padding: 1rem !important;
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
-  .nav-link:last-child {
-    border-bottom: none;
-  }
-  .navbar-toggler {
-    position: relative;
-    z-index: 1050;
-  }
-  .navbar-brand {
-    position: relative;
-    z-index: 1050;
-  }
+  .nav-link:last-child { border-bottom: none; }
+  .navbar-toggler { position: relative; z-index: 1050; }
+  .navbar-brand { position: relative; z-index: 1050; }
 }
-.navbar-collapse.collapsing {
-  transition: none;
+.navbar-collapse.collapsing { transition: none; }
+.navbar-toggler:focus { box-shadow: none; }
+
+/* 4. HERO SECTIONS */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--coffee-900);
 }
-.navbar-toggler:focus {
-  box-shadow: none;
+.hero-section .hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-section .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75));
+  z-index: 1;
+}
+.hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
 }
 
-/* Cards de Inicio */
-.product-card, .icon-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* 5. FOOTER */
+.site-footer {
+  background: var(--coffee-900);
+  color: var(--cream);
+  padding: 4rem 0;
 }
-.product-card:hover, .icon-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+.site-footer h3 { color: var(--cream); }
+.site-footer li { margin-bottom: 0.5rem; font-size: 1.1rem; opacity: 0.8; }
+.site-footer a { color: var(--cream); text-decoration: underline; }
+.site-footer p { color: var(--cream); opacity: 0.8; }
+.footer-divider {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-logo { filter: brightness(0) invert(1); height: 60px; }
+
+/* 6. SOCIAL ICONS */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
 }
 
-/* botones */
+/* 7. BOTONES */
 .btn-outline-secondary {
   border: 2px solid var(--coffee-900);
   padding: 1.2rem 2rem;
@@ -153,8 +160,63 @@ a {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 4px 32px rgba(179, 106, 74, 0.6);
 }
+.hero-badge, .btn-hero {
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  color: var(--terracotta);
+  background: white;
+  transition: all 0.3s ease;
+  border-radius: 40px;
+  font-weight: 600;
+}
+.hero-badge:hover, .btn-hero:hover {
+  background-color: var(--terracotta) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+}
+.hero-badge:hover svg { stroke: white; }
+.btn-enviar { background-color: var(--terracotta); color: white; border: none; }
+.btn-enviar:hover { background-color: var(--coffee-600); color: white; }
 
-/* PAGINA HISTORIA (headline tambien es usado en las cards del index)*/
+/* 8. CARDS */
+.product-card, .icon-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover, .icon-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-5px);
+}
+.product-img-wrapper { height: 230px; background: #eee; overflow: hidden; }
+.product-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Fondo decorativo esquina superior derecha (valores) */
+.card-deco-corner {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--terracotta) 0%, transparent 100%);
+  border-radius: 0 1rem 0 100%;
+}
+/* Icono circular con fondo terracotta suave */
+.icon-circle {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(212, 165, 116, 0.05) 100%);
+}
+/* Icono circular sobre fondo oscuro (hero contacto comunidad) */
+.icon-circle-dark {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(212, 165, 116, 0.1);
+}
+/* Manifiesto (valores) */
+.manifesto-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* 9. TIPOGRAFÍA & BADGES */
 .headline {
   color: var(--terracotta);
   font-size: 1rem;
@@ -168,9 +230,39 @@ a {
   color: var(--terracotta);
   box-shadow: 0 4px 24px var(--cream);
 }
-.timeline-historia-new {
-  position: relative;
+.badge-subscription {
+  background: linear-gradient(135deg, #D4A574 0%, #c08a5e 100%);
+  color: white;
+  font-size: 1rem;
 }
+/* Badges de calidad (catálogo) */
+.badge-premium {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #D4A574 0%, #c08a5e 100%);
+  border-radius: 50rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.badge-justo {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #6F7D63 0%, #556b4a 100%);
+  border-radius: 50rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.badge-organico {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.93) 0%, rgba(158, 86, 56, 0.96) 100%);
+  border-radius: 50rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* 10. TIMELINE HISTORIA */
+.timeline-historia-new { position: relative; }
 .timeline-historia-new::before {
   content: "";
   position: absolute;
@@ -181,7 +273,6 @@ a {
   background: var(--coffee-300, #d4c5b9);
   transform: translateX(-50%);
 }
-
 .timeline-checkpoint {
   position: absolute;
   left: 50%;
@@ -195,64 +286,12 @@ a {
   z-index: 10;
   box-shadow: 0 0 0 4px white;
 }
-.timeline-checkpoint {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background: white;
-  border: 4px solid var(--terracotta, #c1666b);
-  border-radius: 50%;
-  z-index: 10;
-  box-shadow: 0 0 0 4px white;
-}
-
 .timeline-checkpoint-current {
   background: var(--terracotta, #c1666b);
   width: 24px;
   height: 24px;
 }
-.timeline-checkpoint-current {
-  background: var(--terracotta, #c1666b);
-  width: 24px;
-  height: 24px;
-}
-
 @media (max-width: 767px) {
-  .timeline-historia-new::before {
-    left: 20px;
-  }
-  .timeline-checkpoint {
-    left: 20px;
-  }
-}
-
-/* PAGINA CATALOGO */
-.hero-badge,
-.btn-hero {
-  font-size: 1.1rem;
-  padding: 1rem 1.5rem;
-  color: var(--terracotta);
-  background: white;
-  transition: all 0.3s ease;
-  border-radius: 40px;
-  font-weight: 600;
-}
-.hero-badge:hover,
-.btn-hero:hover {
-  background-color: var(--terracotta) !important;
-  color: white !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
-}
-.hero-badge:hover svg {
-  stroke: white;
-}
-
-/* PAGINA COMUNIDAD */
-.card:hover {
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
-  transform: translateY(-5px);
+  .timeline-historia-new::before { left: 20px; }
+  .timeline-checkpoint { left: 20px; }
 }
