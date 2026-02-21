@@ -13,7 +13,6 @@ PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 }
 
-/* 1. RESET & BASE */
 * {
   box-sizing: border-box;
 }
@@ -47,7 +46,6 @@ a {
   transition: 0.3s;
 }
 
-/* 2. LAYOUT */
 .container {
   width: 100%;
   max-width: 1300px !important;
@@ -59,7 +57,6 @@ a {
   padding: 4rem 0;
 }
 
-/* 3. HEADER & NAV */
 .navbar-brand img {
   height: 60px;
   width: auto;
@@ -114,7 +111,7 @@ a {
     font-size: 1.5rem !important;
     padding: 1rem !important;
     display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(10, 5, 5, 0.05);
   }
 
   .nav-link:last-child {
@@ -140,7 +137,6 @@ a {
   box-shadow: none;
 }
 
-/* 4. HERO SECTIONS */
 .hero-section {
   position: relative;
   min-height: 65vh;
@@ -172,7 +168,6 @@ a {
   width: 100%;
 }
 
-/* 5. FOOTER */
 .site-footer {
   background: var(--coffee-900);
   color: var(--cream);
@@ -209,7 +204,6 @@ a {
   height: 60px;
 }
 
-/* 6. SOCIAL ICONS */
 .social-icon {
   width: 40px;
   height: 40px;
@@ -222,7 +216,6 @@ a {
   text-decoration: none;
 }
 
-/* 7. BOTONES */
 .btn-outline-secondary {
   border: 2px solid var(--coffee-900);
   padding: 1.2rem 2rem;
@@ -305,7 +298,6 @@ a {
   object-fit: cover;
 }
 
-/* Fondo decorativo esquina superior derecha (valores) */
 .card-deco-corner {
   width: 120px;
   height: 120px;
@@ -313,24 +305,20 @@ a {
   border-radius: 0 1rem 0 100%;
 }
 
-/* Icono circular con fondo terracotta suave */
 .icon-circle {
   background: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(212, 165, 116, 0.05) 100%);
 }
 
-/* Icono circular sobre fondo oscuro (hero contacto comunidad) */
 .icon-circle-dark {
   width: 48px;
   height: 48px;
   background-color: rgba(212, 165, 116, 0.1);
 }
 
-/* Manifiesto (valores) */
 .manifesto-card {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-/* 9. TIPOGRAFÍA & BADGES */
 .headline {
   color: var(--terracotta);
   font-size: 1rem;
@@ -352,7 +340,6 @@ a {
   font-size: 1rem;
 }
 
-/* Badges de calidad (catálogo) */
 .badge-premium {
   padding: 0.5rem 1rem;
   background: linear-gradient(135deg, #D4A574 0%, #c08a5e 100%);
@@ -380,7 +367,6 @@ a {
   gap: 0.4rem;
 }
 
-/* 10. TIMELINE HISTORIA */
 .timeline-historia-new {
   position: relative;
 }
