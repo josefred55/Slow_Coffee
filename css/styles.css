@@ -1,6 +1,5 @@
 /* NOTAS DE BERTHA
 PONER LAS PROPIEDADES UNA AL LADO DE LA OTRA NO ES RECUDIR LINEAS */
-
 /* ══════════════════════════════════════════════════════════
    SLOW COFFEE - ESTILOS UNIFICADOS
    ══════════════════════════════════════════════════════════ */
@@ -295,3 +294,109 @@ a { text-decoration: none; transition: 0.3s; }
   .timeline-historia-new::before { left: 20px; }
   .timeline-checkpoint { left: 20px; }
 }
+.text-terracotta { color: var(--terracotta) !important; }
+.text-coffee { color: var(--coffee-900) !important; }
+.text-gold { color: #FFD700 !important; }
+.text-star { color: #D4A574 !important; }
+.font-serif { font-family: var(--font-serif) !important; }
+.font-serif-bold {
+  font-family: var(--font-serif) !important;
+  font-weight: 600 !important;
+}
+.price-tag {
+  color: var(--terracotta);
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: var(--font-serif);
+}
+.card-subtitle-serif {
+  font-family: var(--font-serif);
+  color: var(--coffee-900);
+}
+.stat-label {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: var(--terracotta);
+}
+.stat-number {
+  font-family: var(--font-serif);
+  color: var(--terracotta);
+}
+.timeline-year {
+  font-family: var(--font-serif);
+  color: var(--terracotta);
+}
+.trust-label {
+  font-size: 1.1rem;
+  color: var(--coffee-900);
+}
+.card-title-dark {
+  color: var(--coffee-900);
+  font-size: 1.25rem;
+}
+.btn-sm-card {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.icon-circle-sm { width: 48px; height: 48px; }
+.icon-circle-md { width: 60px; height: 60px; }
+.icon-circle-lg { width: 70px; height: 70px; }
+.icon-circle-xl { width: 80px; height: 80px; background: var(--cream); }
+.icon-circle-manifesto { width: 50px; height: 50px; }
+.svg-icon-terracotta {
+  color: var(--terracotta);
+  stroke-width: 1.5px;
+  width: 40px;
+  height: 40px;
+}
+.vr-md { height: 48px; }
+.vr-sm { height: 30px; }
+
+.quote-icon {
+  top: 20px;
+  left: 20px;
+  color: var(--terracotta);
+}
+.sidebar-sticky { top: 100px; }
+.select-auto { width: auto; min-width: 200px; }
+.card-border-subtle { border: 1px solid rgba(0, 0, 0, 0.05) !important; }
+.badge-timeline { background: #e8e5e1; font-size: 1rem; }
+.img-storytelling {
+  box-shadow: 0 12px 30px rgba(43, 30, 22, 0.12);
+  object-fit: cover;
+}
+.img-story-tall {
+  object-fit: cover;
+  height: 400px;
+}
+.img-subscription {
+  object-fit: cover;
+  max-height: 500px;
+}
+.btn-subscription {
+  background-color: var(--terracotta);
+  padding: 0.75rem 2rem;
+  color: white;
+}
+.btn-subscription:hover {
+  background-color: var(--coffee-600);
+  color: white;
+}
+
+.lh-loose { line-height: 1.7; }
+.max-w-prose { max-width: 800px; }
+.img-profile { object-fit: cover; }
+.img-fill { object-fit: cover; }
+.sidebar-sticky { top: 100px; }
+.badge-label { font-size: 0.85rem; }
+.btn-apply { background-color: var(--terracotta); color: white; }
+.btn-apply:hover { background-color: var(--coffee-600); color: white; }
+.select-sort { width: auto; min-width: 200px; }
+.product-card { border: 1px solid rgba(0,0,0,0.05); }
+.product-name { font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem; }
+.product-price { color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif); }
+.btn-card { padding: 0.5rem 1rem; font-size: 0.9rem; }
+.img-historia { box-shadow: 0 12px 30px rgba(43,30,22,0.12); object-fit: cover; }
+.icon-circle-xl { width: 80px; height: 80px; background: var(--cream); }
+.svg-icon { width: 40px; height: 40px; color: var(--terracotta); stroke-width: 1.5px; }
+.svg-inline { vertical-align: middle; }

@@ -49,7 +49,7 @@
             <p class="fs-4 mb-4 text-white">Es tiempo bien invertido.</p>
             <a href="pag/catalogo.html" class="btn btn-hero fs-5">
               Explorar Cafés
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ms-2" style="vertical-align: middle;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ms-2" class="svg-inline">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
@@ -65,51 +65,51 @@
         <div class="row g-4">
 
           <div class="col-md-4">
-            <div class="product-card rounded-4 bg-white h-100" style="border: 1px solid rgba(0,0,0,0.05);">
+            <div class="product-card rounded-4 bg-white h-100">
               <div class="product-img-wrapper rounded-top-4">
                 <img src="./img/productosFoto.png" alt="Café Colina">
               </div>
               <div class="p-4">
                 <span class="headline d-block mb-2">Colombia · Natural</span>
-                <h5 style="font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem;">Café Colina</h5>
+                <h5 class="product-name">Café Colina</h5>
                 <p>Notas de chocolate y naranja. 250g.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <span style="color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif);">9.50 €</span>
-                  <a href="pag/catalogo.html" class="btn btn-outline-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Ver</a>
+                  <span class="product-price">9.50 €</span>
+                  <a href="pag/catalogo.html" class="btn btn-outline-secondary" class="btn-card">Ver</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="product-card rounded-4 bg-white h-100" style="border: 1px solid rgba(0,0,0,0.05);">
+            <div class="product-card rounded-4 bg-white h-100">
               <div class="product-img-wrapper rounded-top-4">
                 <img src="./img/productosFoto.png" alt="Blend Amanecer">
               </div>
               <div class="p-4">
                 <span class="headline d-block mb-2">Blend · Filtrado</span>
-                <h5 style="font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem;">Blend Amanecer</h5>
+                <h5 class="product-name">Blend Amanecer</h5>
                 <p>Equilibrado y dulce, ideal para filtrado. 250g.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <span style="color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif);">8.90 €</span>
-                  <a href="pag/catalogo.html" class="btn btn-outline-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Ver</a>
+                  <span class="product-price">8.90 €</span>
+                  <a href="pag/catalogo.html" class="btn btn-outline-secondary" class="btn-card">Ver</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="product-card rounded-4 bg-white h-100" style="border: 1px solid rgba(0,0,0,0.05);">
+            <div class="product-card rounded-4 bg-white h-100">
               <div class="product-img-wrapper rounded-top-4">
                 <img src="./img/productosFoto.png" alt="Espresso Tostado">
               </div>
               <div class="p-4">
                 <span class="headline d-block mb-2">Espresso · Tostado</span>
-                <h5 style="font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem;">Espresso Tostado</h5>
+                <h5 class="product-name">Espresso Tostado</h5>
                 <p>Cuerpo intenso y final persistente. 250g.</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <span style="color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif);">10.20 €</span>
-                  <a href="pag/catalogo.html" class="btn btn-outline-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Ver</a>
+                  <span class="product-price">10.20 €</span>
+                  <a href="pag/catalogo.html" class="btn btn-outline-secondary" class="btn-card">Ver</a>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@
               revelar matices únicos en cada taza y cuidar la trazabilidad desde la finca hasta tu ritual diario.</p>
           </article>
           <aside class="col-md-6">
-            <img src="./img/historiaFoto2.png" alt="Textura de granos de café" class="img-fluid rounded-3 w-100" style="box-shadow: 0 12px 30px rgba(43,30,22,0.12); object-fit: cover;">
+            <img src="./img/historiaFoto2.png" alt="Textura de granos de café" class="img-fluid rounded-3 w-100" class="img-historia">
           </aside>
         </div>
       </div>
@@ -144,8 +144,8 @@
 
           <div class="col-md-4">
             <div class="icon-card text-center p-5 bg-white rounded-3 h-100">
-              <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; background: var(--cream);">
-                <svg style="width: 40px; height: 40px; color: var(--terracotta); stroke-width: 1.5px;" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path d="M12 2C8 2 4 5 4 9c0 6 8 13 8 13s8-7 8-13c0-4-4-7-8-7z" />
                   <circle cx="12" cy="9" r="2.2" />
                 </svg>
@@ -157,8 +157,8 @@
 
           <div class="col-md-4">
             <div class="icon-card text-center p-5 bg-white rounded-3 h-100">
-              <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; background: var(--cream);">
-                <svg style="width: 40px; height: 40px; color: var(--terracotta); stroke-width: 1.5px;" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path d="M21 12c0 5-9 10-9 10S3 17 3 12a9 9 0 0 1 18 0z" />
                   <path d="M12 6v12" stroke-linecap="round" />
                 </svg>
@@ -170,8 +170,8 @@
 
           <div class="col-md-4">
             <div class="icon-card text-center p-5 bg-white rounded-3 h-100">
-              <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; background: var(--cream);">
-                <svg style="width: 40px; height: 40px; color: var(--terracotta); stroke-width: 1.5px;" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-4">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path d="M3 7h12v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7z" />
                   <path d="M17 8v3a3 3 0 0 0 3 3" stroke-linecap="round" />
                 </svg>
@@ -196,7 +196,7 @@
             <p class="fs-4 mb-4 text-white">Encuentra tu ritual en cada taza.</p>
             <a href="pag/catalogo.html" class="btn btn-hero fs-5">
               Descubrir Más
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ms-2" style="vertical-align: middle;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ms-2" class="svg-inline">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
@@ -217,7 +217,7 @@
           <div class="col-md-4 mb-4">
             <h3 class="mb-3">Contacto</h3>
             <ul class="list-unstyled mb-0">
-              <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
+              <li>Email: <a href="/cdn-cgi/l/email-protection#543c3b38351427383b23373b323231317a312c3539243831"><span class="__cf_email__" data-cfemail="83ebecefe2c3f0efecf4e0ece5e5e6e6ade6fbe2eef3efe6">[email&#160;protected]</span></a></li>
               <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
               <li>Horario: Lun–Vie 9:00–18:00</li>
             </ul>
@@ -245,7 +245,6 @@
 
   </main>
 
-  <script>(function () { document.getElementById('year').textContent = new Date().getFullYear(); })();</script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 </html>
